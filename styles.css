@@ -1,0 +1,213 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: rgb(26,64,90);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgb(26,64,90);
+    color: rgb(211,217,217);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav a {
+    color: rgb(211,217,217);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.header .nav a:hover {
+    color: rgb(0,138,130);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, rgb(26,64,90), rgb(0,138,130));
+    color: rgb(211,217,217);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: rgb(0,138,130);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: rgb(26,64,90);
+}
+
+/* About Section */
+.about {
+    padding: 2rem 0;
+    background-color: rgb(211,217,217);
+}
+
+.about .highlights {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.about .highlight {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 0.5rem;
+    text-align: center;
+}
+
+/* Services Section */
+.services {
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.services .service {
+    background: rgb(211,217,217);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 2rem 0;
+}
+
+.portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio .portfolio-item {
+    background: rgb(211,217,217);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    background-color: rgb(211,217,217);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(26,64,90);
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: rgb(0,138,130);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(26,64,90);
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(26,64,90);
+    color: rgb(211,217,217);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Add animations to services */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services .service {
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.services h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.services p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Center the logo and ribbon content */
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header .nav {
+    margin-top: 1rem;
+}
+
+.services .service-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
